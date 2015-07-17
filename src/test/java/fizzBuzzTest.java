@@ -8,12 +8,18 @@ public class fizzBuzzTest {
     @Test
     public void shouldReturnString() {
         fizzBuzz fb = new fizzBuzz();
-        assertEquals(true, fb.printString() instanceof String);
+        assertEquals(true, fb.printString(1) instanceof String);
     }
 
     @Test
-    public void shouldReturnFissIfMultipleOf3() {
+    public void shouldReturnFizzIfMultipleOf3() {
         fizzBuzz fb=new fizzBuzz();
-        assertEquals("Fizz",fb.printString());
+        assertEquals("Fizz",fb.printString(3));
+    }
+
+    @Test
+    public void shouldReturnBuzzIfMultipleOf5()  {
+        fizzBuzz fb=new fizzBuzz();
+        assertEquals("Buzz",fb.printString(5));
     }
 }

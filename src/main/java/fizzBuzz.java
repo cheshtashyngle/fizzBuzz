@@ -1,6 +1,20 @@
 public class fizzBuzz {
-    String printString()
+    String printString(int number)
     {
-        return "Fizz";
+        if(isMultipleOf3(number))
+        {
+            return "Fizz";
+        }
+        else
+            return "Buzz";
+
     }
+    boolean isMultipleOf3(int number)
+    {
+        if(number%3==0)
+            return true;
+        else
+            return false;
+    }
+
 }
