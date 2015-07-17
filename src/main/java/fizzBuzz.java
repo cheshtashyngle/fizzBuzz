@@ -1,17 +1,23 @@
 public class fizzBuzz {
     String printString(int number)
     {
-        if(isMultipleOf3(number))
-        {
-            return "Fizz";
-        }
-        else
+        if(isMultipleOf15(number))
+            return "FizzBuzz";
+        else if(isMultipleOf5(number))
             return "Buzz";
-
+        else
+            return "Fizz";
     }
-    boolean isMultipleOf3(int number)
+    boolean isMultipleOf15(int number)
     {
-        if(number%3==0)
+        if(number%15==0)
+            return true;
+        else
+            return false;
+    }
+    boolean isMultipleOf5(int number)
+    {
+        if(number%5==0)
             return true;
         else
             return false;
