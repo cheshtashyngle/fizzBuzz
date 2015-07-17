@@ -6,9 +6,14 @@ import static org.junit.Assert.assertEquals;
 public class fizzBuzzTest {
 
     @Test
-
     public void shouldReturnString() {
         fizzBuzz fb = new fizzBuzz();
         assertEquals(true, fb.printString() instanceof String);
+    }
+
+    @Test
+    public void shouldReturnFissIfMultipleOf3() {
+        fizzBuzz fb=new fizzBuzz();
+        assertEquals("Fizz",fb.printString());
     }
 }
