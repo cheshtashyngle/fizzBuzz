@@ -28,4 +28,10 @@ public class fizzBuzzTest {
         fizzBuzz fb=new fizzBuzz();
         assertEquals("FizzBuzz",fb.printString(15));
     }
+
+    @Test
+    public void shouldReturnBlahIfNotMultipleOf3or5() {
+        fizzBuzz fb=new fizzBuzz();
+        assertEquals("Blah",fb.printString(17));
+    }
 }

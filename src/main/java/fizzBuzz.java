@@ -5,8 +5,10 @@ public class fizzBuzz {
             return "FizzBuzz";
         else if(isMultipleOf5(number))
             return "Buzz";
-        else
+        else if(isMultipleOf3(number))
             return "Fizz";
+        else
+            return "Blah";
     }
     boolean isMultipleOf15(int number)
     {
@@ -18,6 +20,13 @@ public class fizzBuzz {
     boolean isMultipleOf5(int number)
     {
         if(number%5==0)
+            return true;
+        else
+            return false;
+    }
+    boolean isMultipleOf3(int number)
+    {
+        if(number%3==0)
             return true;
         else
             return false;
